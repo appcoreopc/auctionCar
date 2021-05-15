@@ -3,6 +3,7 @@
 
 There's some security issue wit the code. It uses send and transfer method call. 
 
+```
 // bad
 contract Vulnerable {
     function withdraw(uint256 amount) external {
@@ -20,3 +21,5 @@ contract Fixed {
         require(success, "Transfer failed.");
     }
 }
+
+```
